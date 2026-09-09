@@ -3,26 +3,26 @@ import "./Header.css"
 
 export default function Header() {
 
-  const userAdmin = false;
+  const userAdmin = true;
 
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+            <NavLink to="" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/register" >Register</NavLink>
+            <NavLink to="register" >Register</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" >Contacto</NavLink>
+            <NavLink to="contact" >Contacto</NavLink>
           </li>
 
           {
             userAdmin && (
               <li>
-                <NavLink to="/admin" >Admin</NavLink>
+                <NavLink to="admin" >Admin</NavLink>
               </li>
             )
           }

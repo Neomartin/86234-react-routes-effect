@@ -11,7 +11,8 @@ body {
 
 
 main {
-  flex: 1
+  flex: 1;
+  background-color: #121212;
 }
 
 footer {

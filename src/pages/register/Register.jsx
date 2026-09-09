@@ -1,3 +1,5 @@
+import Products from "../products/Products";
+
 export default function Register() {
   return (
     <div>
@@ -14,6 +16,7 @@ export default function Register() {
         <br />
         <input type="text" />
       </form>
+
     </div>
   )
 }

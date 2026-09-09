@@ -7,6 +7,7 @@ import Register from './pages/register/Register'
 import Admin from './pages/admin/Admin'
 import AdminUsers from './pages/admin/users/AdminUsers'
 import AdminProducts from './pages/admin/products/AdminProducts'
+import Products from './pages/products/Products'
 
 function App() {
 
@@ -21,11 +22,15 @@ function App() {
 
         <Route path="register" element={<Register />} />
 
+        <Route path="products" element={<Products />} />
+
         <Route path="contact" element={<h1>PAGE CONTACTO</h1>} />
 
         <Route path="admin" element={<Admin />}>
+
           <Route path="users" element={<AdminUsers />} />
           <Route path="products" element={<AdminProducts />} />
+
         </Route>
 
         <Route path="*" element={<h1>404 NOT FOUND </h1>} />
